@@ -68,7 +68,7 @@ export default {
   methods:{
     handleSubmit(){
       if (this.formData.password == this.formData.surePassword && this.formData.password != '') {
-        ApiAuth.register({userid:this.$route.query.phone,password:this.formData.password}).then(res=>{
+        ApiAuth.register({username:this.$route.query.phone,personname:this.$route.query.phone,password:this.formData.password}).then(res=>{
           if (res.status == 200) {
             this.$Message.success('注册成功')
             this.$router.push('/login')

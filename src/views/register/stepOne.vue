@@ -153,7 +153,7 @@ export default {
       if(this.formData.password == this.getcode && this.formData.password != ''){
         this.$router.push({ path: "/register/stepTwo" ,
           query: {
-            phone: this.mobile
+            phone: this.formData.username
           }})
       }else {
         this.$Message.error("验证码有误")
