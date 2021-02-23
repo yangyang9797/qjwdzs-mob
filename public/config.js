@@ -11,8 +11,8 @@ var config = {
     }
   },
   models: {
-    // dev: 'http://192.168.14.28:11002/qjwdzs/',
-    dev: 'http://192.168.14.75:11002/qjwdzs/',
+    dev: 'http://localhost:11002/qjwdzs/',
+    //dev: 'http://192.168.14.75:11002/qjwdzs/',
     //pro: 'http://kjxx.cnovit.com/qjwdzs/'
   },
   uris: {
@@ -22,7 +22,7 @@ var config = {
   urls: {
       pm: '',
   },
-  wxurl:'http://kjxx.cnovit.com/qjwdzs/',
+  wxurl:'http://localhost:11002/qjwdzs/',
   sendurl:'http://kjxx.cnovit.com/yunmas/',
 };
 window.config = config;
