@@ -1,0 +1,124 @@
+.form-sqb {
+  flex: 1;
+  display: flex;
+  height: 100%;
+  overflow: auto;
+  width: 100%;
+}
+
+.form-sqb .el-form {
+  margin: 0 auto;
+
+}
+
+.form-sqb table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  border: 0;
+  table-layout: fixed;
+}
+
+.form-sqb .el-form-item__error {
+  color: #F56C6C;
+  font-size: 14px;
+  line-height: 1;
+  position: absolute;
+  top: 25% !important;
+  right: 10% !important;
+}
+
+.el-form-item__error {
+  color: #F56C6C;
+  font-size: 12px;
+  line-height: 1;
+  padding-top: 4px;
+  position: absolute;
+  top: 25%;
+  right: 0;
+}
+
+.form-sqb .el-form-item {
+  margin-bottom: 0px;
+}
+
+.form-sqb .el-form-item__content {
+  line-height: 35px;
+}
+
+.form-sqb .head .danwei {
+  float: right;
+  margin-right: 5px;
+}
+
+.form-sqb .table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  border: 0;
+  table-layout: fixed;
+}
+
+.form-sqb input, .form-sqb textare {
+  border-radius: 0px;
+}
+
+.form-sqb .td-control {
+  border: solid 1px #55A7E3;
+  height: 35px;
+  text-align: left;
+  padding: 0;
+}
+.td-control-text {
+  border: solid 1px #55A7E3;
+  height: 35px;
+  text-align: left;
+  padding-left: 10px ;
+}
+
+.form-sqb .td-control .el-date-picker, .form-sqb .td-control .el-select {
+  width: 100%;
+}
+
+.form-sqb .td-control2, .form-sqb .td-control2 input {
+  border: solid 1px #55A7E3;
+  height: 70px;
+  text-align: left;
+}
+
+.form-sqb .td-title, .form-sqb .td-control-title {
+  border: solid 1px #55A7E3;
+  background-color: #EFF4FA;
+  padding-right: 5px;
+  height: 35px;
+  text-align: center;
+}
+
+.form-sqb .td-title {
+  border: solid 1px #55A7E3;
+}
+
+.form-sqb .td-control-title {
+  text-align: center;
+  font-family: SimSun;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.form-tableovit {
+  .el-form-item__error {
+    color: #F56C6C;
+    font-size: 12px;
+    line-height: 1;
+    padding-top: 4px;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    left: auto;
+    text-align: right;
+  }
+  .text-danger {
+    color: red
+  }
+}
+

@@ -1,0 +1,79 @@
+{
+  "name": "@ocv/qjydc",
+  "version": "0.1.5",
+  "description": "权籍云调查",
+  "keywords": [
+    "权籍云调查"
+  ],
+  "author": "lichun",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@ocv/admin": "^0.2.0",
+    "@ocv/web": "^0.2.0",
+    "async-validator": "^1.12.2",
+    "axios": "^0.19.2",
+    "drag-tree-table": "^1.2.5",
+    "element-china-area-data": "^4.1.2",
+    "element-ui": "^2.13.0",
+    "exif-js": "^2.3.0",
+    "file-saver": "^2.0.2",
+    "html2canvas": "^1.0.0-rc.5",
+    "jquery": "^3.4.1",
+    "js-cookie": "^2.2.1",
+    "screenfull": "^5.0.2",
+    "vant": "^2.8.4",
+    "view-design": "^4.1.3",
+    "vue": "^2.6.11",
+    "vue-amap": "^0.5.10",
+    "vue-json-viewer": "^2.2.8",
+    "vue-router": "^3.1.6",
+    "vuedraggable": "^2.23.2",
+    "vuetify": "^2.2.18",
+    "vuex": "^3.1.3",
+    "weixin-js-sdk": "^1.4.0-test"
+  },
+  "devDependencies": {
+    "@babel/parser": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@nuxtjs/vuetify": "^1.10.3",
+    "@vue/cli-plugin-babel": "^4.1.0",
+    "@vue/cli-plugin-eslint": "^4.1.0",
+    "@vue/cli-service": "^4.1.0",
+    "babel-eslint": "^10.0.3",
+    "babel-polyfill": "^6.26.0",
+    "compression-webpack-plugin": "^3.1.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.41.4"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {
+      "no-console": "off"
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "browserslist": [
+    "> 0.1%",
+    "last 3 versions"
+  ]
+}

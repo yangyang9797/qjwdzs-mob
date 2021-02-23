@@ -1,0 +1,17 @@
+.app-comm-content {
+    height: calc(100% - 56px);
+}
+
+.app-them-color {
+    color: #49a8ee
+}
+
+.buttom-btns-view {
+    background: white;
+    padding-top: 10px;
+}
+
+.app-fill-btn {
+    width: 90%;
+    margin-left: 5%;
+}
