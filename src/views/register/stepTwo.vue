@@ -33,6 +33,7 @@
 </template>
 
 <script>
+import ApiAuth from '../../api/api-auth';
 export default {
   data() {
     const validatePass = (rule, value, callback) => {
@@ -67,7 +68,12 @@ export default {
   methods:{
     handleSubmit(){
       if (this.formData.password == this.formData.surePassword && this.formData.password != '') {
-        console.log(1);
+        ApiAuth.register({userid:this.$route.query.phone,password:this.formData.password}).then(res=>{
+          if (res.status == 200) {
+            this.$Message.success('注册成功')
+            this.$router.push('/login')
+          }
+        })
       }
     }
   }

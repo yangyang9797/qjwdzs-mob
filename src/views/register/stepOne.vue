@@ -150,7 +150,14 @@ export default {
       }, 1000);
     },
     handleSubmit(){
-      this.$router.push({ path: "/register/stepTwo" })
+      if(this.formData.password == this.getcode && this.formData.password != ''){
+        this.$router.push({ path: "/register/stepTwo" ,
+          query: {
+            phone: this.mobile
+          }})
+      }else {
+        this.$Message.error("验证码有误")
+      }
     }
 
   },

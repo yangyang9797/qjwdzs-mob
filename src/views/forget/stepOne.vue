@@ -159,17 +159,11 @@ export default {
     },
     handleSubmit(){
       if(this.formData.password == this.getcode && this.formData.password != ''){
-        // console.log(1);
-        
         this.$router.push({ path: "/forget/stepTwo" ,
           query: {
             phone: this.userid
           }}
         )
-
-
-
-
       }
       
     }

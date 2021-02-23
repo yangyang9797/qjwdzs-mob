@@ -9,7 +9,7 @@ export const ApiAuth = {
 
     register(opt) {
         return request({
-            url: apiUrl + 'register',
+            url: config.urls.auth + 'register',
             method: 'post',
             params: opt // params
         })

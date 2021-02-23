@@ -65,9 +65,9 @@
               </el-form-item>
 
               <el-form-item v-if="toggleLogin == false">
-                <a style="float: right; color: #666; margin-left: 10px;font-size:13px" @click="handlePassLogin">验证码登录</a>
+                <a style="float: right; color: #666;margin-left: 10px;font-size:13px" @click="handleRegister"> 注册 </a>
+                <a style="float: right; color: #666; font-size:13px" @click="handlePassLogin">验证码登录</a>
                 <a style="float: right; color: #666;font-size:13px" @click="handleForget">忘记密码？</a>
-                <a style="float: right; color: #666;font-size:13px" @click="handleRegister"> 注册 </a>
               </el-form-item>
             </div>
 
@@ -430,7 +430,7 @@ export default {
             }
             if (this.getcode != '') {
               if (this.getcode != this.form1.yzm) {
-                this.$Message.error('验证码错误，请重新获取验证码')
+                this.$Message.error('验证码错误')
                 return
               }
             }
