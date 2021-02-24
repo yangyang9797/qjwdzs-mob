@@ -107,14 +107,7 @@
                   </FormItem>
                   <Divider />
 
-                  <FormItem label="宗地代码" prop="zddm">
-                    <Input
-                      type="text"
-                      v-model="ruleForm.zddm"
-                      placeholder="用于关联权利人和房屋信息"
-                    />
-                  </FormItem>
-                  <Divider />
+
 
                   <FormItem label="宗地地址" prop="zddz">
                     <Input
@@ -291,14 +284,7 @@
 
                   <Divider />
 
-                  <FormItem label="宗地代码" prop="zddm">
-                    <Input
-                      type="text"
-                      v-model="ruleForm.zddm"
-                      placeholder="用于关联权利人和房屋信息"
-                    />
-                  </FormItem>
-                  <Divider />
+
                   <FormItem label="证载权利人" prop="zzqlr">
                     <Input
                       type="text"
@@ -472,19 +458,7 @@
             <el-tab-pane label="房屋" name="third">
 
               <Card :bordered="false" style="border-radius: 15px">
-                <!--          <FormItem label="坐落" style="padding: 0px 10px;">
-                          <Input type="text"  v-model="f_obligee.obladdress"/>
-                      </FormItem>
-                <Divider />-->
 
-                <FormItem label="宗地代码" prop="zddm">
-                  <Input
-                    type="text"
-                    v-model="ruleForm.zddm"
-                    placeholder="用于关联宅基地和权利人信息"
-                  />
-                </FormItem>
-                <Divider />
 
                 <FormItem
                   label="房屋预编码"
@@ -493,7 +467,7 @@
                   <Input
                     type="text"
                     v-model="ruleForm.fwybm"
-                    placeholder="用于区分主房和辅房"
+                    placeholder="请输入"
                   />
                 </FormItem>
 
@@ -545,11 +519,7 @@
                 </div>
                 <Divider />
 
-                <el-divider v-if="addHouseflag == false"
-                  ><el-button class="el-icon-plus" @click="addHouse"
-                    >添加辅房</el-button
-                  ></el-divider
-                >
+
                 <div class="addffxx">
                   <div v-if="addHouseflag == true">
                     <h2 style="font-size: 24px; color: #eee">辅房信息</h2>
@@ -573,7 +543,7 @@
                       <Input
                         type="text"
                         v-model="ruleForm.fffwybm"
-                        placeholder="用于区分主房和辅房"
+                        placeholder="请输入"
                       />
                     </FormItem>
                     <Divider />

@@ -175,14 +175,7 @@
               <Divider />
 
 
-                <FormItem label="宗地代码" prop="zddm">
-                  <Input
-                    type="text"
-                    v-model="ruleForm.zddm"
-                    placeholder="用于关联权利人和房屋信息"
-                  />
-                </FormItem>
-                <Divider />
+
 
                 <FormItem label="宗地地址" prop="zddz">
                   <Input
@@ -336,18 +329,6 @@
                 </FormItem>
               <Divider />
 
-                <div>
-                  <photograph
-                    :config="this.config"
-                    :tishi="'调查表格'"
-                    :iswx="this.iswx"
-                    :v_show="'false'"
-                    :updata="updata_dcbg"
-                    ref="Photograph"
-                  ></photograph>
-                </div>
-                <span style="color: gray">包括调查表正反面及其他附件</span>
-                 <Divider />
                 <div>
                   <photograph
                     :config="this.config"
@@ -553,7 +534,7 @@
                   <Input
                     type="text"
                     v-model="ruleForm.fwybm"
-                    placeholder="用于区分主房和辅房"
+                    placeholder="请输入"
                   />
                 </FormItem>
                 <Divider />
@@ -611,11 +592,7 @@
                   ></photograph>
                 </div>
 <Divider />
-                <el-divider v-if="addHouseflag == false"
-                  ><el-button class="el-icon-plus" @click="addHouse"
-                    >添加辅房</el-button
-                  ></el-divider
-                >
+
                 <div v-if="addHouseflag == true">
                   <h2 style="font-size: 24px; color: #eee">辅房信息</h2>
                   <Divider />
