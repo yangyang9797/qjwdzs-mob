@@ -183,7 +183,7 @@ export default {
   },
 
   mounted() {
-    axios.get('http://localhost:11002/qjwdzs/qjwdzs/instance/pub/getInstance').then(res=>{
+    axios.get('http://39.101.185.215:11002/qjwdzs/qjwdzs/instance/pub/getInstance').then(res=>{
       console.log(res.data.data)
       this.cityList = res.data.data
     })
